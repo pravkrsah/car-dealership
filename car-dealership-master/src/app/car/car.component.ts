@@ -31,9 +31,4 @@ export class CarComponent implements OnInit {
       model: new FormControl()
     });
   }
-  onSubmit(): void{
-    console.log(this.carForm.value)
-  }
-
-
 }
