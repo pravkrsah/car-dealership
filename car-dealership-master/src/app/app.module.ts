@@ -9,11 +9,12 @@ import { CarComponent } from './car/car.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ListCarsComponent } from './car/list-cars.component';
 import { CarService } from './car/car.service';
+import { AddcarComponent } from './car/addcar.component';
 
 // TODO: import any modules that will be used in the app
 
 @NgModule({
-  declarations: [AppComponent, CarComponent, ListCarsComponent],
+  declarations: [AppComponent, CarComponent, ListCarsComponent,AddcarComponent],
   imports: [BrowserModule, AppRoutingModule,ReactiveFormsModule, FormsModule],
   providers: [CarService],
   bootstrap: [AppComponent]

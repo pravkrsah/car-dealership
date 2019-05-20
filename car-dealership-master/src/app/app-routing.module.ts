@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CarComponent } from './car/car.component';
 import { ListCarsComponent } from './car/list-cars.component';
+import { AddcarComponent } from './car/addcar.component'; 
 
 const routes: Routes = [
   {path:'list', component: ListCarsComponent},
-  {path:'car', component: CarComponent},
+  {path:'addcar', component: AddcarComponent},
   {path:'', redirectTo:'/list',pathMatch:'full'}
 ];
 

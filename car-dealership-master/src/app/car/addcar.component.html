@@ -1,0 +1,36 @@
+<form #carForm="ngForm" (ngSubmit)="SaveCar(carForm)">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <div>
+        <span class="panel-title">Add Car</span>
+    </div>
+    <div class="panel-body">
+        <div class="form-group">
+            <label for="id">Id</label>
+            <input _id="id" name="id" [(ngModel)]="id" type="text" class="form-control">
+          </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input _id="name" name="name" [(ngModel)]="name" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="year">Year</label>
+          <input _id="year" name="year" [(ngModel)]="year" type="number" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="color">Color</label>
+          <input _id="color" name="color" [(ngModel)]="color" type="text" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="price">Price</label>
+          <input _id="price" name="price" [(ngModel)]="price" type="number" class="form-control">
+      </div>
+    </div>
+    <div class="panel-footer">
+      <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+  </div>
+</div>
+</form>
+
+Angular Generated Form Model:{{carForm.value |json}}
