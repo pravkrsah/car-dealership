@@ -25,6 +25,79 @@
           <label for="price">Price</label>
           <input _id="price" name="price" [(ngModel)]="price" type="number" class="form-control">
       </div>
+      <div class="form-group">
+        <label>Has Sunroof</label>
+          <div class="form-control">
+            <label class="radio-inline">
+              <input type="radio" value="true" name="hasSunroof" [(ngModel)]="hasSunroof">
+              Yes
+            </label>
+            <label class="radio-inline">
+              <input type="radio" value="false" name="hasSunroof" [(ngModel)]="hasSunroof">
+               No
+            </label>
+          </div>
+      </div>
+      <div class="form-group">
+            <div class="form-control">
+              <label class="checkbox-inline">
+                <input type="checkbox" name="isFourWheelDrive" [(ngModel)]="isFourWheelDrive" checked>
+                Is Four Wheel Drive
+              </label>
+            </div>
+      </div>
+      <div class="form-group">
+          <label>Has Low Miles</label>
+            <div class="form-control">
+              <label class="radio-inline">
+                <input type="radio" value="true" name="hasLowMiles" [(ngModel)]="hasLowMiles">
+                Yes
+              </label>
+              <label class="radio-inline">
+                <input type="radio" value="false" name="hasLowMiles" [(ngModel)]="hasLowMiles">
+                 No
+              </label>
+            </div>
+      </div>
+      <div class="form-group">
+          <label>Has Power Windows</label>
+            <div class="form-control">
+              <label class="radio-inline">
+                <input type="radio" value="true" name="hasPowerWindows" [(ngModel)]="hasPowerWindows">
+                Yes
+              </label>
+              <label class="radio-inline">
+                <input type="radio" value="false" name="hasPowerWindows" [(ngModel)]="hasPowerWindows">
+                 No
+              </label>
+            </div>
+      </div>
+      <div class="form-group">
+          <label>Has Navigation</label>
+            <div class="form-control">
+              <label class="radio-inline">
+                <input type="radio" value="true" name="hasNavigation" [(ngModel)]="hasNavigation">
+                Yes
+              </label>
+              <label class="radio-inline">
+                <input type="radio" value="false" name="hasNavigation" [(ngModel)]="hasNavigation">
+                 No
+              </label>
+            </div>
+      </div>
+      <div class="form-group">
+          <label>Has Heated Seats</label>
+            <div class="form-control">
+              <label class="radio-inline">
+                <input type="radio" value="true" name="hasHeatedSeats" [(ngModel)]="hasHeatedSeats">
+                Yes
+              </label>
+              <label class="radio-inline">
+                <input type="radio" value="false" name="hasHeatedSeats" [(ngModel)]="hasHeatedSeats">
+                 No
+              </label>
+            </div>
+      </div>
     </div>
     <div class="panel-footer">
       <button type="submit" class="btn btn-primary">Save</button>
